@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://o41k2qfcfxrm"]
+[gd_scene load_steps=19 format=3 uid="uid://o41k2qfcfxrm"]
 
 [ext_resource type="PackedScene" uid="uid://cmoxv1m54y817" path="res://scenes/player.tscn" id="1_8qujg"]
 [ext_resource type="Texture2D" uid="uid://b0tha3oclg5jb" path="res://assets/sprites/world_tileset.png" id="1_qgrfk"]
@@ -7,6 +7,8 @@
 [ext_resource type="PackedScene" uid="uid://u7tkt3c6m6c4" path="res://scenes/platform-long-2.tscn" id="5_80jty"]
 [ext_resource type="PackedScene" uid="uid://c1h5fgnnfca0b" path="res://scenes/coin.tscn" id="6_7ccew"]
 [ext_resource type="PackedScene" uid="uid://bonj6smdnro1f" path="res://scenes/killzone.tscn" id="7_260ii"]
+[ext_resource type="PackedScene" uid="uid://cajn18apuoout" path="res://scenes/invisible_block.tscn" id="8_8nq6g"]
+[ext_resource type="PackedScene" uid="uid://fhe53yutx4lb" path="res://scenes/slime.tscn" id="8_hs8ya"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e27gw"]
 texture = ExtResource("1_qgrfk")
@@ -371,6 +373,40 @@ position = Vector2(3001, 41)
 
 [node name="Coin24" parent="Coins" instance=ExtResource("6_7ccew")]
 position = Vector2(3129, 73)
+
+[node name="Invisible_Blocks" type="Node" parent="."]
+
+[node name="Invisible_Block" parent="Invisible_Blocks" instance=ExtResource("8_8nq6g")]
+position = Vector2(296, 72)
+
+[node name="Invisible_Block2" parent="Invisible_Blocks" instance=ExtResource("8_8nq6g")]
+position = Vector2(456, 72)
+
+[node name="Invisible_Block3" parent="Invisible_Blocks" instance=ExtResource("8_8nq6g")]
+position = Vector2(776, 72)
+
+[node name="Invisible_Block4" parent="Invisible_Blocks" instance=ExtResource("8_8nq6g")]
+position = Vector2(904, 72)
+
+[node name="Invisible_Block5" parent="Invisible_Blocks" instance=ExtResource("8_8nq6g")]
+position = Vector2(1048, 72)
+
+[node name="Invisible_Block6" parent="Invisible_Blocks" instance=ExtResource("8_8nq6g")]
+position = Vector2(1080, 72)
+
+[node name="Slimes" type="Node" parent="."]
+
+[node name="Slime" parent="Slimes" instance=ExtResource("8_hs8ya")]
+position = Vector2(200, 80)
+
+[node name="Slime2" parent="Slimes" instance=ExtResource("8_hs8ya")]
+position = Vector2(216, 80)
+
+[node name="Slime3" parent="Slimes" instance=ExtResource("8_hs8ya")]
+position = Vector2(504, 80)
+
+[node name="Slime4" parent="Slimes" instance=ExtResource("8_hs8ya")]
+position = Vector2(728, 80)
 
 [node name="Killzone" parent="." instance=ExtResource("7_260ii")]
 
