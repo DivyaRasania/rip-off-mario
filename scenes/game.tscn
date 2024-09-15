@@ -302,10 +302,10 @@ position = Vector2(2072, -8)
 position = Vector2(2182, -71)
 
 [node name="Coin18" parent="." instance=ExtResource("6_7ccew")]
-position = Vector2(2294, -51)
+position = Vector2(2306, -50)
 
 [node name="Coin19" parent="." instance=ExtResource("6_7ccew")]
-position = Vector2(2419, -26)
+position = Vector2(2436, -26)
 
 [node name="Coin20" parent="." instance=ExtResource("6_7ccew")]
 position = Vector2(2579, -4)
