@@ -394,28 +394,28 @@ position = Vector2(696, 80)
 position = Vector2(952, 80)
 
 [node name="Slime6" parent="Slimes" instance=ExtResource("8_hs8ya")]
-position = Vector2(1203, 80)
+position = Vector2(1160, 80)
 
 [node name="Slime7" parent="Slimes" instance=ExtResource("8_hs8ya")]
-position = Vector2(1347, 80)
+position = Vector2(1384, 80)
 
 [node name="Slime8" parent="Slimes" instance=ExtResource("8_hs8ya")]
-position = Vector2(1523, 80)
+position = Vector2(1528, 80)
 
 [node name="Slime9" parent="Slimes" instance=ExtResource("8_hs8ya")]
-position = Vector2(1715, 80)
+position = Vector2(1720, 80)
 
 [node name="Slime10" parent="Slimes" instance=ExtResource("8_hs8ya")]
-position = Vector2(2019, 80)
+position = Vector2(1992, 80)
 
 [node name="Slime11" parent="Slimes" instance=ExtResource("8_hs8ya")]
-position = Vector2(2851, 80)
+position = Vector2(2808, 80)
 
 [node name="Slime12" parent="Slimes" instance=ExtResource("8_hs8ya")]
-position = Vector2(2867, 80)
+position = Vector2(2824, 80)
 
 [node name="Slime13" parent="Slimes" instance=ExtResource("8_hs8ya")]
-position = Vector2(2883, 80)
+position = Vector2(2840, 80)
 
 [node name="Invisible_Blocks" type="Node" parent="."]
 
