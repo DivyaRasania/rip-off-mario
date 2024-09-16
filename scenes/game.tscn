@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://o41k2qfcfxrm"]
+[gd_scene load_steps=20 format=3 uid="uid://o41k2qfcfxrm"]
 
 [ext_resource type="PackedScene" uid="uid://cmoxv1m54y817" path="res://scenes/player.tscn" id="1_8qujg"]
 [ext_resource type="Texture2D" uid="uid://b0tha3oclg5jb" path="res://assets/sprites/world_tileset.png" id="1_qgrfk"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bonj6smdnro1f" path="res://scenes/killzone.tscn" id="7_260ii"]
 [ext_resource type="PackedScene" uid="uid://jb0bvea5lu1v" path="res://scenes/invisible_block.tscn" id="8_8nq6g"]
 [ext_resource type="PackedScene" uid="uid://fhe53yutx4lb" path="res://scenes/slime.tscn" id="8_hs8ya"]
+[ext_resource type="FontFile" uid="uid://bgeoqkn23pvau" path="res://assets/fonts/PixelOperator8.ttf" id="10_agsd5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e27gw"]
 texture = ExtResource("1_qgrfk")
@@ -441,3 +442,59 @@ position = Vector2(1081, 73)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 shape = SubResource("WorldBoundaryShape2D_u6y3c")
+
+[node name="Labels" type="Node" parent="."]
+
+[node name="Label" type="Label" parent="Labels"]
+offset_left = -119.0
+offset_top = 10.0
+offset_right = -20.0
+offset_bottom = 51.0
+theme_override_fonts/font = ExtResource("10_agsd5")
+theme_override_font_sizes/font_size = 8
+text = "Hello.
+Use arrow keys 
+or WASD to move 
+and jump"
+
+[node name="Label2" type="Label" parent="Labels"]
+offset_left = 23.0
+offset_top = 10.0
+offset_right = 116.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("10_agsd5")
+theme_override_font_sizes/font_size = 8
+text = "Be careful of 
+these slimes
+(They kill you)"
+
+[node name="Label3" type="Label" parent="Labels"]
+offset_left = 266.0
+offset_top = 10.0
+offset_right = 383.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("10_agsd5")
+theme_override_font_sizes/font_size = 8
+text = "Use these platform 
+to move around 
+different islands"
+
+[node name="Label4" type="Label" parent="Labels"]
+offset_left = 790.0
+offset_top = 10.0
+offset_right = 891.0
+offset_bottom = 40.0
+theme_override_fonts/font = ExtResource("10_agsd5")
+theme_override_font_sizes/font_size = 8
+text = "Don't overthink.
+just go right 
+ahead"
+
+[node name="Label5" type="Label" parent="Labels"]
+offset_left = 2103.0
+offset_top = -38.0
+offset_right = 2204.0
+offset_bottom = -30.0
+theme_override_fonts/font = ExtResource("10_agsd5")
+theme_override_font_sizes/font_size = 8
+text = "Wait a second..."
