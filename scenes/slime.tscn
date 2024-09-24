@@ -1,24 +1,8 @@
-[gd_scene load_steps=18 format=3 uid="uid://fhe53yutx4lb"]
+[gd_scene load_steps=10 format=3 uid="uid://fhe53yutx4lb"]
 
 [ext_resource type="Script" path="res://scripts/slime.gd" id="1_g4r3x"]
 [ext_resource type="Texture2D" uid="uid://cfwvo83esc6rd" path="res://assets/sprites/slime_purple.png" id="1_ygrk4"]
 [ext_resource type="PackedScene" uid="uid://bonj6smdnro1f" path="res://scenes/killzone.tscn" id="2_xwg3c"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_j8wso"]
-atlas = ExtResource("1_ygrk4")
-region = Rect2(0, 48, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gqp4x"]
-atlas = ExtResource("1_ygrk4")
-region = Rect2(24, 48, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_jx7sd"]
-atlas = ExtResource("1_ygrk4")
-region = Rect2(48, 48, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_c2ikj"]
-atlas = ExtResource("1_ygrk4")
-region = Rect2(72, 48, 24, 24)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f8axi"]
 atlas = ExtResource("1_ygrk4")
@@ -36,41 +20,8 @@ region = Rect2(48, 24, 24, 24)
 atlas = ExtResource("1_ygrk4")
 region = Rect2(72, 24, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_3idsa"]
-atlas = ExtResource("1_ygrk4")
-region = Rect2(0, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_i0663"]
-atlas = ExtResource("1_ygrk4")
-region = Rect2(24, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_wopa4"]
-atlas = ExtResource("1_ygrk4")
-region = Rect2(48, 0, 24, 24)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_h2abg"]
-atlas = ExtResource("1_ygrk4")
-region = Rect2(72, 0, 24, 24)
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_g263m"]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_j8wso")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gqp4x")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_jx7sd")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_c2ikj")
-}],
-"loop": true,
-"name": &"damage",
-"speed": 10.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_f8axi")
@@ -87,23 +38,6 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_3idsa")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_i0663")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_wopa4")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_h2abg")
-}],
-"loop": true,
-"name": &"wakeing_up",
-"speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qw6dn"]
@@ -117,7 +51,6 @@ position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_g263m")
 animation = &"idle"
 autoplay = "idle"
-frame_progress = 0.403952
 
 [node name="Killzone" parent="." instance=ExtResource("2_xwg3c")]
 

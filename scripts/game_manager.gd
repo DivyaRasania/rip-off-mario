@@ -1,9 +1,11 @@
 extends Node
 
-var score = 0
+var coin = 0
 
-@onready var score_label: Label = $ScoreLabel
+@onready var coins_collected_label: Label = $CoinsCollectedLabel
+@onready var coins_picked: Label = %CoinsPicked
 
 func add_point():
-	score += 1
-	score_label.text = "You collected " + str(score) + " coins."
+	coin += 1
+	coins_picked.text = "Coins Picked: " + str(coin)
+	coins_collected_label.text = "You collected \n" + str(coin) + "/25 coins."
